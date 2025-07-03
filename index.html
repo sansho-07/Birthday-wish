@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sister! 💕</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Poppins:wght@300;400;600&family=Pacifico&family=Quicksand:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Auto-play prompt overlay -->
+    <div class="music-prompt-overlay" id="musicPrompt">
+        <div class="music-prompt-card">
+            <div class="cute-icon">🎵</div>
+            <h3>Let's Celebrate Your Special Day!</h3>
+            <p>Click to start this magical birthday celebration with music! 🎉✨</p>
+            <button class="start-celebration-btn" id="startCelebration">
+                🎂 Start the Birthday Magic! 🎂
+            </button>
+        </div>
+    </div>
+
+    <!-- Floating hearts and stars -->
+    <div class="hearts-container">
+        <div class="heart heart-1">💖</div>
+        <div class="heart heart-2">💕</div>
+        <div class="heart heart-3">💗</div>
+        <div class="heart heart-4">💝</div>
+        <div class="heart heart-5">💘</div>
+        <div class="heart heart-6">⭐</div>
+        <div class="heart heart-7">✨</div>
+        <div class="heart heart-8">🌟</div>
+    </div>
+
+    <!-- Background balloons -->
+    <div class="balloons-container">
+        <div class="balloon balloon-1"></div>
+        <div class="balloon balloon-2"></div>
+        <div class="balloon balloon-3"></div>
+        <div class="balloon balloon-4"></div>
+        <div class="balloon balloon-5"></div>
+        <div class="balloon balloon-6"></div>
+    </div>
+
+    <!-- Confetti container -->
+    <div class="confetti-container" id="confetti"></div>
+
+    <!-- Main content -->
+    <div class="container">
+        <header class="birthday-header">
+            <div class="cute-crown">👑</div>
+            <h1 class="birthday-title" id="birthdayTitle">
+                <!-- EDIT THIS: Replace "Sister" with your sister's name -->
+                Happy Birthday Beautiful Sister! 
+            </h1>
+            <div class="birthday-emojis">🎉✨🎂✨🎉</div>
+            <div class="birthday-subtitle-container">
+                <p class="birthday-subtitle" id="birthdaySubtitle">You're the most amazing sister in the world! Hope your special day is absolutely magical! 💕</p>
+                <div class="cute-sparkles">
+                    <span class="sparkle-emoji">✨</span>
+                    <span class="sparkle-emoji">⭐</span>
+                    <span class="sparkle-emoji">💫</span>
+                    <span class="sparkle-emoji">🌟</span>
+                    <span class="sparkle-emoji">✨</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Sister-specific wishes section -->
+        <div class="wishes-section">
+            <div class="wish-card" id="wishCard">
+                <div class="wish-icon">👸</div>
+                <p class="wish-text" id="wishText">
+                    To my wonderful sister: You bring so much joy, laughter, and love into this world. May your birthday be filled with all your favorite things and surrounded by everyone who loves you! 💖
+                </p>
+                <div class="wish-signature">With all my love 💕</div>
+            </div>
+        </div>
+
+        <!-- Photo gallery - Only 2 photos -->
+        <div class="photo-gallery">
+            <div class="gallery-title">
+                <h2>💕 Sister Memories 💕</h2>
+            </div>
+            <div class="polaroid-container">
+                <!-- Photo 1: Portrait (4160 x 2340) -->
+                <div class="polaroid polaroid-1">
+                    <!-- EDIT THIS: Replace src with your first sister's photo URL -->
+                    <div class="photo-frame">
+                        <img src="images/WhatsApp Image 2025-07-03 at 00.36.32_906acb53.jpg" alt="Sister memory 1">
+                        <div class="photo-overlay">
+                            <div class="heart-float">💕</div>
+                        </div>
+                    </div>
+                    <div class="polaroid-caption">Best sister ever! ✨</div>
+                </div>
+                
+                <!-- Photo 2: Landscape (4160 x 2773) -->
+                <div class="polaroid polaroid-2">
+                    <!-- EDIT THIS: Replace src with your second sister's photo URL -->
+                    <div class="photo-frame">
+                        <img src="images/WhatsApp Image 2025-07-03 at 00.36.33_97983009.jpg" alt="Sister memory 2">
+                        <div class="photo-overlay">
+                            <div class="heart-float">💖</div>
+                        </div>
+                    </div>
+                    <div class="polaroid-caption">Lovely sister 🌈</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Enhanced interactive button -->
+        <div class="button-container">
+            <div class="button-glow"></div>
+            <button class="celebration-button" id="celebrateBtn">
+                <span class="button-icon">🎁</span>
+                <span class="button-text">Click for a Funny Surprise!</span>
+                <span class="button-sparkles">✨✨✨</span>
+            </button>
+            <div class="button-hint">
+                <span class="hint-text" style="color: darkblue;">Tap me for something hilarious! 😄🪄</span>
+                <div class="hint-arrow">👆</div>
+            </div>
+        </div>
+
+        <!-- Enhanced cake animation -->
+        <div class="cake-container" id="cakeContainer">
+            <div class="cake-celebration">
+                <div class="celebration-text">🎉 SURPRISE FOR SISTER! 🎉</div>
+                <div class="cake">
+                    <div class="cake-layer cake-bottom">
+                        <div class="cake-decoration">🌸🌸🌸</div>
+                    </div>
+                    <div class="cake-layer cake-middle">
+                        <div class="cake-decoration">🎀🎀</div>
+                    </div>
+                    <div class="cake-layer cake-top">
+                        <div class="cake-decoration">💎</div>
+                    </div>
+                    <div class="candle candle-1"></div>
+                    <div class="candle candle-2"></div>
+                    <div class="candle candle-3"></div>
+                    <div class="flame flame-1"></div>
+                    <div class="flame flame-2"></div>
+                    <div class="flame flame-3"></div>
+                </div>
+                <div class="cake-message">Make a wish, beautiful sister! 🌟</div>
+            </div>
+        </div>
+
+        <!-- Surprise messages -->
+        <div class="surprise-messages" id="surpriseMessages">
+            <div class="message-bubble" id="messageBubble">
+                <div class="message-content" id="messageContent"></div>
+                <div class="message-tail"></div>
+            </div>
+        </div>
+
+        <!-- Music controls -->
+        <div class="music-controls">
+            <button class="music-btn" id="musicBtn" title="Click to play music">
+                <span class="music-icon">🎵</span>
+                <span class="music-text">Play Music</span>
+            </button>
+            <button class="music-btn active" id="muteBtn" style="display: none;" title="Music is playing">
+                <span class="music-icon">🔇</span>
+                <span class="music-text">Stop Music</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Audio elements -->
+    <!-- REPLACE THIS: Add your happy-birthday-357371.mp3 file -->
+    <audio id="backgroundMusic" preload="auto" loop>
+        <source src="happy-birthday-357371.mp3" type="audio/mpeg">
+        <!-- Fallback for different formats -->
+        <source src="happy-birthday-357371.wav" type="audio/wav">
+    </audio>
+    
+    <!-- Funny button sound will be generated by JavaScript -->
+    <audio id="birthdayChime" preload="auto">
+        <!-- This will be populated by JavaScript with funny sounds -->
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
